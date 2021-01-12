@@ -4,6 +4,7 @@ import Vuex from '../views/Vuex.vue'
 import About from '../views/About.vue'
 import About1 from '../views/About1.vue'
 import About2 from '../views/About2.vue'
+import Getter from '../views/Getter.vue'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/about2',
     name: 'About2',
     component: About2
+  },
+  {
+    path: '/getter',
+    name: 'Getter',
+    component: Getter
   },
 ]
 

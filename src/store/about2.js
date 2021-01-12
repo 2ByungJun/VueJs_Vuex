@@ -18,6 +18,16 @@ const reqPostData = async (id = 0) => {
             title: "post title 1",
             content: "post content 1",
         },
+        {
+            id: id,
+            title: "post title 2",
+            content: "post content 2",
+        },
+        {
+            id: id,
+            title: "post title 3",
+            content: "post content 3",
+        },
     ]
 }
 
@@ -34,7 +44,7 @@ const reqUserData = async () => {
 }
 
 export default{
-    namespace: true,
+    namespace: true, // 모듈이 독립적으로 선언되기를 원하는 경우
     state:{
         isLoading: false,
         posts: [],
@@ -64,6 +74,8 @@ export default{
         }
     },
     getters:{
-
+        postCount(state){
+            return state.posts.length
+        },
     }
 }
