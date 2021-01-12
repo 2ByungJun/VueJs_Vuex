@@ -1,8 +1,10 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">1. Vuex</router-link> |
+      <router-link to="/about">2. 상태-변이</router-link> |
+      <router-link to="/about1">3. 반응성</router-link> |
+      <router-link to="/about2">4. 액션-변이</router-link> 
     </div>
     <router-view/>
   </div>
