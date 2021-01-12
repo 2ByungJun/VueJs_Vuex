@@ -6,7 +6,8 @@
       <router-link to="/reative">3. 반응성</router-link> |
       <router-link to="/actionMutation">4. 액션-변이</router-link> |
       <router-link to="/getter">5. 게터(Getter)</router-link> |
-      <router-link to="/moduling">6. 모듈화</router-link> 
+      <router-link to="/moduling">6. 모듈화</router-link> |
+      <router-link to="/rootState">7. RootState(Store간)</router-link> 
     </div>
     <router-view/>
   </div>

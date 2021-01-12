@@ -6,6 +6,7 @@ import Reative from '../views/Reative.vue'
 import ActionMutation from '../views/ActionMutation.vue'
 import Getter from '../views/Getter.vue'
 import Moduling from '../views/Moduling.vue'
+import RootState from '../views/RootState.vue'
 
 Vue.use(VueRouter)
 
@@ -39,6 +40,11 @@ const routes = [
     path: '/moduling',
     name: 'Moduling',
     component: Moduling
+  },
+  {
+    path: '/rootState',
+    name: 'RootState',
+    component: RootState
   },
 ]
 
