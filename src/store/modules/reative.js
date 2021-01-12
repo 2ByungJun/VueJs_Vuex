@@ -1,5 +1,5 @@
 export default {
-    namespace: true, // 모듈이 독립적으로 선언되기를 원하는 경우
+    namespaced: true, // 모듈이 독립적으로 선언되기를 원하는 경우
     state: {
         count: 0
     },

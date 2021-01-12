@@ -20,14 +20,14 @@
 <script>
 export default{
   mounted(){
-    this.$store.dispatch("getUserPostData")
+    this.$store.dispatch("actionMutation/getUserPostData")
   },
   computed:{
     isLoading(){
-      return this.$store.state.about2.isLoading
+      return this.$store.state.actionMutation.isLoading
     },
     posts(){
-      return this.$store.state.about2.posts
+      return this.$store.state.actionMutation.posts
     }
   }
 }

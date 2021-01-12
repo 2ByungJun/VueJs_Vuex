@@ -2,10 +2,11 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">1. Vuex</router-link> |
-      <router-link to="/about">2. 상태-변이</router-link> |
-      <router-link to="/about1">3. 반응성</router-link> |
-      <router-link to="/about2">4. 액션-변이</router-link> |
-      <router-link to="/getter">5. 게터(Getter)</router-link> 
+      <router-link to="/stateMutation">2. 상태-변이</router-link> |
+      <router-link to="/reative">3. 반응성</router-link> |
+      <router-link to="/actionMutation">4. 액션-변이</router-link> |
+      <router-link to="/getter">5. 게터(Getter)</router-link> |
+      <router-link to="/moduling">6. 모듈화</router-link> 
     </div>
     <router-view/>
   </div>

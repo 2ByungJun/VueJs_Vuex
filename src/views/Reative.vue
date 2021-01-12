@@ -1,8 +1,7 @@
 <!-- vue 반응성 예시 -->
 <template>
   <div class="about1">
-    <h1>a: {{countObj.a}}</h1>
-    <h1>b: {{countObj.b}}</h1>
+    <h1>{{countObj}}</h1>
     <button @click="increment('a')">a증가</button>
     <button @click="increment('b')">b증가</button>
 
@@ -26,8 +25,8 @@ export default{
       }
     }, // countObj.a는 반응적입니다.
     mounted(){      
-      //this.countObj["b"] = 0  // countObj.b는 반응적이지 않습니다. (동작 x)
-      this.$set(this.countObj, "b", 0) // countObj.b 객체에 반응형 속성을 추가 (동작 o)
+      this.countObj["b"] = 0  // countObj.b는 반응적이지 않습니다. (동작 x)
+      //this.$set(this.countObj, "b", 0) // countObj.b 객체에 반응형 속성을 추가 (동작 o)
     },
     methods: {
       increment(type){

@@ -34,7 +34,7 @@ export default{
   computed:{
     // state(상태) count 변화시 재 연산
     count(){
-      return this.$store.state.about.count
+      return this.$store.state.reative.count
     }
   },
 }

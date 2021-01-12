@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Vuex from '../views/Vuex.vue'
-import About from '../views/About.vue'
-import About1 from '../views/About1.vue'
-import About2 from '../views/About2.vue'
+import StateMutation from '../views/StateMutation.vue'
+import Reative from '../views/Reative.vue'
+import ActionMutation from '../views/ActionMutation.vue'
 import Getter from '../views/Getter.vue'
+import Moduling from '../views/Moduling.vue'
 
 Vue.use(VueRouter)
 
@@ -15,24 +16,29 @@ const routes = [
     component: Vuex
   },
   {
-    path: '/about',
-    name: 'About',
-    component: About
+    path: '/stateMutation',
+    name: 'StateMutation',
+    component: StateMutation
   },
   {
-    path: '/about1',
-    name: 'About1',
-    component: About1
+    path: '/reative',
+    name: 'Reative',
+    component: Reative
   },
   {
-    path: '/about2',
-    name: 'About2',
-    component: About2
+    path: '/actionMutation',
+    name: 'ActionMutation',
+    component: ActionMutation
   },
   {
     path: '/getter',
     name: 'Getter',
     component: Getter
+  },
+  {
+    path: '/moduling',
+    name: 'Moduling',
+    component: Moduling
   },
 ]
 
