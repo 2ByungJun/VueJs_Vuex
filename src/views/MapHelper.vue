@@ -1,31 +1,72 @@
 <template>
     <div>
+        <div class="container">
+            <ul style="text-align: left">
+                <li><TextLabel :msg='msg' />를 선언한다.</li>
+            </ul>
+        </div>
+
         <h2>MapState</h2>
-        <p>이름 : <span>{{name}}</span></p>
-        <p>나이는 올해 <span>{{age}}</span>살 입니다.</p>
-        <p>주소는 <span>{{adr}}</span></p>
+        <p>이름 : <span class="bj-span">{{name}}</span></p>
+        <p>나이는 올해 <span class="bj-span">{{age}}</span>살 입니다.</p>
+        <p>주소는 <span class="bj-span">{{adr}}</span></p>
+        <img 
+            src="@/assets/img/mapState.png"
+            width="600"
+            height="600"
+        >
         <br>
         <br>
         <h2>MapGetters</h2>
-        <p>Getter 결과 : <span>{{postCnt}}</span></p>
+        <p>Getter 결과 : <span class="bj-span">{{postCnt}}</span></p>
+        <img 
+            src="@/assets/img/mapGetters.png"
+            width="600"
+            height="500"
+        >
         <br>
         <br>
         <h2>MapMutations</h2>
-        <h1><span>{{count}}</span></h1>
+        <h1><span class="bj-span">{{count}}</span></h1>
         <button @click="increment()">증가</button>
         <button @click="decrement()">감소</button>
+        <br><br>
+        <div>
+            <img 
+                src="@/assets/img/mapMutations.png"
+                width="600"
+                height="500"
+            >
+        </div>
         <br>
         <br>
         <h2>MapActions</h2>
-        <p><span>{{comments}}</span></p>
+        <p><span class="bj-span">{{comments}}</span></p>
         <button @click="setCommentData()">COMMENT 데이터 불러오기</button>
+        <br><br>
+        <div>
+            <img 
+                src="@/assets/img/mapActions.png"
+                width="600"
+                height="500"
+            >
+        </div>
     </div>
 </template>
 
 <script>
 import {mapState, mapGetters, mapMutations, mapActions} from 'vuex'
+import TextLabel from '@/components/TextLabel.vue'
 
 export default {
+    components: {
+        TextLabel,
+    },
+    data(){
+        return{
+            msg: "import { mapState, mapMutations, mapActions, mapGetters } from 'vuex'"
+        }
+    },
     // 기존 코드
     // name(){
     //     return this.$store.state.mapState.name
@@ -72,8 +113,8 @@ export default {
 </script>
 
 <style scoped>
-span{
-    color: blueviolet;
+span.bj-span{
+    color: brown;
     font-weight: bold;
 }
 </style>

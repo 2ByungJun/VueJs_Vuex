@@ -10,7 +10,10 @@
       <router-link to="/rootState">7. RootState(Store간)</router-link> |
       <router-link to="/mapHelper">8. MapHelper</router-link> 
     </div>
-    <router-view/>
+
+    <div>
+      <router-view/>
+    </div>
   </div>
 </template>
 
@@ -34,5 +37,9 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+ul{
+  margin-left: 80px;
 }
 </style>

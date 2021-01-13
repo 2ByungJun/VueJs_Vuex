@@ -22,8 +22,20 @@ export default{
 
             try {
                 commit("CHANGE_LOAD_STATUS") // 로딩처리 true
-                const { id } = await reqUserData // 유저 데이터
-                const posts = await reqPostData(id) // 유저데이터의 id값으로 포스트 목록 가져오기
+                const { id } = await reqUserData() // 유저 데이터
+                var posts = await reqPostData(id) // 유저데이터의 id값으로 포스트 목록 가져오기
+                
+                commit("SET_POST_DATA", posts) // 포스트 데이터 변이(payload 전달)
+            } catch(err){
+                console.error(err)
+            } finally{
+                commit("CHANGE_LOAD_STATUS", false) // 로딩대기 false
+            }
+        },
+        async getPostData({commit}){
+            try {
+                commit("CHANGE_LOAD_STATUS") // 로딩처리 true
+                var posts = await reqPostData() // 유저데이터의 id값으로 포스트 목록 가져오기
                 
                 commit("SET_POST_DATA", posts) // 포스트 데이터 변이(payload 전달)
             } catch(err){
