@@ -7,6 +7,7 @@ import ActionMutation from '../views/ActionMutation.vue'
 import Getter from '../views/Getter.vue'
 import Moduling from '../views/Moduling.vue'
 import RootState from '../views/RootState.vue'
+import MapHelper from '../views/MapHelper.vue'
 
 Vue.use(VueRouter)
 
@@ -45,6 +46,11 @@ const routes = [
     path: '/rootState',
     name: 'RootState',
     component: RootState
+  },
+  {
+    path: '/mapHelper',
+    name: 'MapHelper',
+    component: MapHelper
   },
 ]
 
