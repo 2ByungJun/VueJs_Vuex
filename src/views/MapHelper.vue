@@ -64,7 +64,7 @@ export default {
     },
     data(){
         return{
-            msg: "import { mapState, mapMutations, mapActions, mapGetters } from 'vuex'"
+            msg: "import { mapState, mapMutations, mapActions, mapGetters } from 'vuex'",
         }
     },
     // 기존 코드
