@@ -1,10 +1,15 @@
 <template>
-    <span class="badge badge-secondary">{{msg}}</span>
+    <b-badge pill :variant="variantType" >{{msg}}</b-badge>
 </template>
 
 <script>
 export default {
-    props: ['msg']
+    props: ['msg', 'variant'],
+    computed: {
+        variantType(){
+            return this.variant
+        }
+    },
 }
 </script>
 

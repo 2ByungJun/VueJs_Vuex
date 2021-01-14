@@ -8,6 +8,7 @@ import Getter from '../views/Getter.vue'
 import Moduling from '../views/Moduling.vue'
 import RootState from '../views/RootState.vue'
 import MapHelper from '../views/MapHelper.vue'
+import TextLabelView from '../views/TextLabelView.vue'
 
 Vue.use(VueRouter)
 
@@ -51,6 +52,11 @@ const routes = [
     path: '/mapHelper',
     name: 'MapHelper',
     component: MapHelper
+  },
+  {
+    path: '/textLabel',
+    name: 'TextLabelView',
+    component: TextLabelView
   },
 ]
 

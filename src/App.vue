@@ -8,7 +8,8 @@
       <router-link to="/getter">5. 게터(Getter)</router-link> |
       <router-link to="/moduling">6. 모듈화</router-link> |
       <router-link to="/rootState">7. RootState(Store간)</router-link> |
-      <router-link to="/mapHelper">8. MapHelper</router-link> 
+      <router-link to="/mapHelper">8. MapHelper</router-link> | 
+      <router-link to="/textLabel"> <TextLabel :msg="'+ TextLabel Tip'" /></router-link> 
     </div>
 
     <div>
@@ -16,6 +17,16 @@
     </div>
   </div>
 </template>
+
+<script>
+import TextLabel from '@/components/TextLabel.vue'
+
+export default {
+  components: {
+    TextLabel,
+  }
+}
+</script>
 
 <style>
 #app {
