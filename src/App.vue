@@ -11,7 +11,7 @@
       <router-link to="/mapHelper">8. MapHelper</router-link> | 
       <router-link to="/textLabel"> <TextLabel :msg="'+ TextLabel Tip'" /></router-link> 
     </div>
-
+    
     <div>
       <router-view/>
     </div>

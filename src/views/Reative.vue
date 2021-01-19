@@ -39,7 +39,7 @@ export default {
         msg: 'this.$set((데이터), (키), (값))'
       }
     }, // countObj.a는 반응적입니다.
-    mounted(){      
+    created(){      
       this.countObj["b"] = 0  // countObj.b는 반응적이지 않습니다. (동작 x)
       //this.$set(this.countObj, "b", 0) // countObj.b 객체에 반응형 속성을 추가 (동작 o)
     },
