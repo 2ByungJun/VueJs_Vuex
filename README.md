@@ -1,4 +1,4 @@
-# vuex-study
+# VuexBook
 
 ## web link
 https://bj-vuex.netlify.app

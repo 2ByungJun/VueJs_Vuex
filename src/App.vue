@@ -1,5 +1,21 @@
 <template>
-  <div id="app">
+  <div id="app" class="container">
+    <br>
+    <div class="card">
+      <h2 style="margin-top:10px">BBANG-JUN</h2>
+      <b-button-group>
+        <b-button variant="outline-primary" @click="onVelog">
+          <b-icon icon="person-circle"></b-icon> Velog
+        </b-button>
+        <b-button variant="outline-primary" @click="onGitHub">
+          <b-icon icon="github"></b-icon> Github
+        </b-button>
+        <b-button variant="outline-primary" @click="onFacebook">
+          <b-icon icon="facebook"></b-icon> Facebook
+        </b-button>
+    </b-button-group>
+    </div>
+
     <div id="nav">
       <router-link to="/">1. Vuex</router-link> |
       <router-link to="/stateMutation">2. 상태-변이</router-link> |
@@ -24,7 +40,18 @@ import TextLabel from '@/components/TextLabel.vue'
 export default {
   components: {
     TextLabel,
-  }
+  },
+  methods : {
+    onVelog(){
+      window.open('https://velog.io/@ieed0205/about')
+    },
+    onGithub(){
+      window.open('https://github.com/2ByungJun/VueJs_Vuex')
+    },
+    onFacebook(){
+      window.open('https://www.facebook.com/profile.php?id=100006057602357')
+    },
+  },
 }
 </script>
 
