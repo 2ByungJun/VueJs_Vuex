@@ -1,7 +1,7 @@
 # VuexBook
 
 ## web link
-https://bj-vuex.netlify.app
+https://vuexbook.netlify.app/
 
 ## velog
 https://velog.io/@ieed0205
